@@ -41,23 +41,27 @@
                 <p>2024年了,本来准备在自己电脑上搭个博客的,但是捣鼓了一圈端口啊域名解析啊什么的之后我还是</p>
 <h3><strong>果断放弃</strong></h3>
 <p>为什么呢?</p>
-<p>原因有三:<br>
-1. 没有可以在<em>Cloudfare免费cdn</em>用的域名,而家里的上行流量是<strong>远远不够</strong>的!</p>
-<div class="highlight"><pre><span></span><code>专买一个怎么想都***不值***<span class="nt">&lt;br&gt;</span>
-唯一可以的eu.org审核还没过<span class="nt">&lt;br&gt;</span>
-<span class="nt">&lt;del&gt;</span>还不是心疼钱<span class="nt">&lt;/del&gt;</span>
-</code></pre></div>
-
+<p>原因有三:</p>
 <ol>
-<li>GitHub Pages可以免费服务一个静态网页,虽然一个账号只有一个,但是有总比没有好<br>
+<li>
+<p>没有可以在<em>Cloudfare免费cdn</em>用的域名,而家里的上行流量是<strong>远远不够</strong>的!<br></p>
+<p>专买一个怎么想都<strong><em>不值</em></strong><br>
+唯一可以的eu.org审核还没过<br>
+<del>还不是心疼钱</del></p>
+</li>
+<li>
+<p>GitHub Pages可以免费服务一个静态网页,虽然一个账号只有一个,但是有总比没有好<br>
 当然网上也有freehosting和wix之类,<em>据说</em>效果不好就没再去深究<br>
-中途倒是扫到过一个社区志愿的网页服务,挺感人,不过......一下就过去了</li>
+中途倒是扫到过一个社区志愿的网页服务,挺感人,不过......一下就过去了</p>
+</li>
 <li>"刚好"看到了 <a href="https://sammirabyan.github.io/build-with-pelican.html" title="一份非常好的指导">这份文档</a> 和 <a href="https://docs.getpelican.com/en/latest/index.html" title="Pelican官方文档">Pelican官方文档</a> ,万事俱备只欠东风!</li>
 </ol>
 <p>具体流程那两个教程里都有,我就不啰嗦了好吧<br>
-有几点注意提一下<br>
-* GitHub用户名<strong>不分</strong><em>大小</em>写.用creepydog.github.io和CreepyDog.github.io除了显示外<strong>没有</strong>任何区别!都是指向一个用户的.
-* 虽然我最后是git push由pelican content生成的output文件夹,但是建议刚刚开始的直接用 <a href="https://docs.getpelican.com/en/latest/tips.html" title="注意看publishing to GitHub那里">官方文档里Tips栏的GitHub Action方法</a> .这样更加<em>方便</em>,同时<em>节约本地资源</em>,你甚至<strong>只</strong>需要git环境就能开写!</p>
+有几点注意提一下</p>
+<ul>
+<li>GitHub用户名<strong>不分</strong><em>大小</em>写.用creepydog.github.io和CreepyDog.github.io除了显示外<strong>没有</strong>任何区别!都是指向一个用户的.</li>
+<li>虽然我最后是git push由pelican content生成的output文件夹,但是建议刚刚开始的直接用 <a href="https://docs.getpelican.com/en/latest/tips.html" title="注意看publishing to GitHub那里">官方文档里Tips栏的GitHub Action方法</a> .这样更加<em>方便</em>,同时<em>节约本地资源</em>,你甚至<strong>只</strong>需要git环境就能开写!</li>
+</ul>
 <h1>写在最后的感受</h1>
 <p>最终搞完的感觉就是,<br>
 像git这种工具<br>
@@ -72,7 +76,7 @@ git config user.name &quot;CreepyDog&quot;
 git config user.email <span class="gs">*我邮箱*</span>
 git remote add origin <span class="gs">*项目链接*</span>
 git add .
-git commit --all
+git commit -m <span class="gs">*message*</span>
 git push -u origin main
 </code></pre></div>
 
